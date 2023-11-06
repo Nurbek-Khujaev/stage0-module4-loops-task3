@@ -16,30 +16,36 @@ public class GreatestCommonDivisor {
             }
 
 
-        } else if (first >= second) {
-
-            for (int i = 1; i <= second; i++) {
-
-                if (second % i == 0 && first % i == 0 && i > gcd) {
-                    gcd = i;
-                }
-
-                System.out.println(gcd);
-
-            }
-
         } else {
+            if (first >= second) {
 
-            for (int i = 1; i <= first; i++) {
+                for (int i = 1; i <= second; i++) {
 
-                if (first % i == 0 && second % i == 0 && i > gcd) {
-                    gcd = i;
+                    if (second % i == 0 && first % i == 0 && i > gcd) {
+                        gcd = i;
+                    }
+
+
                 }
 
-                System.out.println(gcd);
+            } else {
 
+                for (int i = 1; i <= first; i++) {
+
+                    if (first % i == 0 && second % i == 0 && i > gcd) {
+                        gcd = i;
+                    }
+
+
+                }
             }
+
+            System.out.println(gcd);
+
+
         }
+
+
 
 
     }
