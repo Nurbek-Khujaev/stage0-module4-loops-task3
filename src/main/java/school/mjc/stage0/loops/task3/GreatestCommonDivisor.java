@@ -4,7 +4,15 @@ public class GreatestCommonDivisor {
     public void printGCD(int first, int second) {
 
         int gcd = 1;
-        if (first >= second) {
+
+        if (first == 0 || second == 0) {
+            if (first == 0) {
+                System.out.println(second);
+            } else {
+                System.out.println(first);
+            }
+
+        } else if (first >= second) {
 
             for (int i = 1; i <= second; i++) {
 
