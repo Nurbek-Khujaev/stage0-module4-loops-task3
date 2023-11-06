@@ -25,7 +25,12 @@ public class DigitsSum {
 
         }
 
-        System.out.println(sum);
+        if (sum < 0) {
+            System.out.println(-1 * sum);
+        }
+        else {
+            System.out.println(sum);
+        }
 
 
     }
