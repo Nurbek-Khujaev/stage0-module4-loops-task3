@@ -5,13 +5,12 @@ public class GreatestCommonDivisor {
 
         int gcd = 1;
 
-        if (first == 0 || second == 0) {
-            if (first == 0) {
-                System.out.println(second);
-            } else {
-                System.out.println(first);
-            }
+        if (first == 0 && second != 0) {
+            System.out.println(second);
 
+
+        } else if (first != 0 && second == 0) {
+            System.out.println(first);
         } else if (first >= second) {
 
             for (int i = 1; i <= second; i++) {
